@@ -8,5 +8,13 @@ namespace SweepstakesProject
 {
     class MarketingFirm
     {
+        //member variable (HAS A)
+
+        //constructor
+        public MarketingFirm()
+        {
+
+        }
+        //method (CAN DO)  ------------------------------------------------------------------------------------------------
     }
 }

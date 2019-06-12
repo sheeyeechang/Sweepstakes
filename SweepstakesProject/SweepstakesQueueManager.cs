@@ -8,5 +8,15 @@ namespace SweepstakesProject
 {
     class SweepstakesQueueManager
     {
+        //member variable (HAS A)
+
+        //constructor
+        public SweepstakesQueueManager()
+        {
+
+        }
+        //method (CAN DO)  ------------------------------------------------------------------------------------------------
+        //(10 points) As a developer, I want to create a SweepstakesQueueManager class that uses the 
+        //Queue data structure as an underlying structure.
     }
 }

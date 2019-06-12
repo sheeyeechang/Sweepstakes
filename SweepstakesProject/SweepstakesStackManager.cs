@@ -8,5 +8,16 @@ namespace SweepstakesProject
 {
     class SweepstakesStackManager
     {
+        //member variable (HAS A)
+
+        //constructor
+        public SweepstakesStackManager()
+        {
+
+        }
+        //method (CAN DO)  ------------------------------------------------------------------------------------------------
+        //(10 points) As a developer, I want to create a SweepstakesStackManager class that uses the 
+        //Stack data structure as an underlying structure.
+
     }
 }
