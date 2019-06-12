@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace SweepstakesProject
 {
-    class UserInterface
-    {        //member variable (HAS A)
+    public static class UserInterface
+    {    
+        //member variable (HAS A)
 
         //constructor
-        public UserInterface()
-        {
 
-        }
-        //method (CAN DO)  -------------------------------------------------------
+        //method (CAN DO)  ------------------------------------------------------------------------------------------------
+        //(10 points) I want to create a user interface for any information the application 
+        //would need to get from the user. One example would be the functionality to assign a Contestant object a 
+        //first name, last name, email address, and registration number.
 
         public static string AskFirstName()
         {

@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace SweepstakesProject
 {
-    class Contestant
+    public class Contestant
     {
+        //member variable (HAS A)
+        public string firstName;
+        public string lastName;
+        public string emailAddress;
+        public int registrationNumber;
+
+        //constructor
+        public Contestant()
+        {
+
+
+        }
+        //method (CAN DO)  -------------------------------------------------------
+        //(5 points) I want to create a Contestant class that has a first name, 
+        //last name, email address, and registration number.
     }
 }
