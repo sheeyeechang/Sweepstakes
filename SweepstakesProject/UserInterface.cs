@@ -20,26 +20,33 @@ namespace SweepstakesProject
         public static string AskFirstName()
         {
             Console.WriteLine("What is your first name?");
+            string firstName = Console.ReadLine().ToString();
+            return firstName;
         }
         public static string AskLastName()
         {
             Console.WriteLine("What is your last name?");
+            string lastName = Console.ReadLine().ToString();
+            return lastName;
         }
         public static string AskEmail()
         {
             Console.WriteLine("What is your email?");
+            string email = Console.ReadLine().ToString();
+            return email;
 
         }
         public static int AskRegistrationNumber()
         {
             Console.WriteLine("What is your registratio number?");
-
+            int registrationNumber = Int32.Parse(Console.ReadLine());
+            return registrationNumber;
         }
         public static void DisplayConstestantInfo(Contestant contestant)
         {
             Console.WriteLine($"First Name: " + contestant.firstName);
             Console.WriteLine($"Last Name: " + contestant.lastName);
-            Console.WriteLine($"Email: " + contestant.email);
+            Console.WriteLine($"Email: " + contestant.emailAddress);
             Console.WriteLine($"Registration Number: " + contestant.registrationNumber);
         }
         

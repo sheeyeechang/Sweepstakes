@@ -22,10 +22,10 @@ namespace SweepstakesProject
         {
 
         }
-        public void Sweepstakes GetSweepstakes()
-        {
-
-        }
+        //public void Sweepstakes GetSweepstakes()
+        //{
+            
+        //}
 
 
 

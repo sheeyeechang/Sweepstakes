@@ -19,7 +19,7 @@ namespace SweepstakesProject
         {
 
 
-        }
+      }
         //method (CAN DO)  -------------------------------------------------------
         //(5 points) I want to create a Contestant class that has a first name, 
         //last name, email address, and registration number.

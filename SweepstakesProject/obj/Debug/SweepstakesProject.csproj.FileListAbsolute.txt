@@ -1,0 +1,6 @@
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\bin\Debug\SweepstakesProject.exe.config
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\bin\Debug\SweepstakesProject.exe
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\bin\Debug\SweepstakesProject.pdb
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.csproj.CoreCompileInputs.cache
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.exe
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.pdb
