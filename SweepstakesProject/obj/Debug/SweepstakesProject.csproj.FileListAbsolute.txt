@@ -4,3 +4,4 @@ C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\bin\Deb
 C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.csproj.CoreCompileInputs.cache
 C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.exe
 C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.pdb
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.csprojAssemblyReference.cache

@@ -29,16 +29,17 @@ namespace SweepstakesProject
         //full implementation(write the functionality) of each method:
         public void RegisterContestant(Contestant contestant)
         {
-            contestant.registrationNumber = contestantsDictionary.Count + 1;
+            contestant.registrationNumber = contestantsDictionary.Count + 1;            //do the count first before assign registration number
             contestantsDictionary.Add(contestant.registrationNumber, contestant);
         }
         // random select winner from dictionary
         public string PickWinner()
         {
             int winnerContestant;
-            winnerContestant = random.Next(contestantsDictionary.Count) + 1;
-            contestantsDictionary.TryGetValue(winnerContestant, out winner);
-            string name = "First Name: " + winner.firstName + " Last Name: " winner.lastName + " Registration Number: " + winner.registrationNumber;
+            winnerContestant = random.Next(contestantsDictionary.Count) + 1;            // assign operator; ex. y = x+1
+            winner = contestantsDictionary[winnerContestant];                           // pick value winner in dictionary same as below
+           // contestantsDictionary.TryGetValue(winnerContestant, out winner);            // TryGetValue to pick winner
+            string name = "First Name: " + winner.firstName + "   Last Name: " + winner.lastName + "   Registration Number: " + winner.registrationNumber;
             return name;
 
             //    TValue value;
@@ -50,7 +51,7 @@ namespace SweepstakesProject
         public void PrintContestantInfo(Contestant contestant)
         {
             Console.WriteLine($"First Name: {contestant.firstName}");
-            Console.WriteLine($"Last Name: {contestant.firstName}");
+            Console.WriteLine($"Last Name: {contestant.lastName}");
             Console.WriteLine($"Email: {contestant.emailAddress}");
             Console.WriteLine($"Registration Number: {contestant.registrationNumber}");
             Console.ReadLine();

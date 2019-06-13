@@ -40,7 +40,6 @@ namespace SweepstakesProject
             sweepstakes.PrintContestantInfo(contestant1);
             sweepstakes.PrintContestantInfo(contestant2);
 
-
             Console.ReadLine();
 
         }

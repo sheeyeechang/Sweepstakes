@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SweepstakesProject
 {
     public static class UserInterface
-    {    
+    {
         //member variable (HAS A)
 
         //constructor
@@ -17,39 +17,50 @@ namespace SweepstakesProject
         //would need to get from the user. One example would be the functionality to assign a Contestant object a 
         //first name, last name, email address, and registration number.
 
-        public static string AskFirstName()
+        public static string FirstName()
         {
-            Console.WriteLine("What is your first name?");
-            string firstName = Console.ReadLine().ToString();
+            Console.WriteLine("Please enter your first name:");
+            string firstName = Console.ReadLine().ToString();           // assign operator y = x+1
             return firstName;
         }
-        public static string AskLastName()
+        public static string LastName()
         {
-            Console.WriteLine("What is your last name?");
+            Console.WriteLine("Please enter your last name?");
             string lastName = Console.ReadLine().ToString();
             return lastName;
         }
-        public static string AskEmail()
+        public static string Email()
         {
-            Console.WriteLine("What is your email?");
+            Console.WriteLine("Please enter your email?");
             string email = Console.ReadLine().ToString();
             return email;
+        }
 
-        }
-        public static int AskRegistrationNumber()
-        {
-            Console.WriteLine("What is your registratio number?");
-            int registrationNumber = Int32.Parse(Console.ReadLine());
-            return registrationNumber;
-        }
         public static void DisplayConstestantInfo(Contestant contestant)
         {
-            Console.WriteLine($"First Name: " + contestant.firstName);
-            Console.WriteLine($"Last Name: " + contestant.lastName);
-            Console.WriteLine($"Email: " + contestant.emailAddress);
-            Console.WriteLine($"Registration Number: " + contestant.registrationNumber);
+            Console.WriteLine($"First Name: {contestant.firstName}");
+            Console.WriteLine($"Last Name: {contestant.firstName}");
+            Console.WriteLine($"Email: {contestant.emailAddress}");
+            Console.WriteLine($"Registration Number: {contestant.registrationNumber}");
+            Console.ReadLine();
         }
-        
-        
+
+        //ask to pick a stack or queue
+        //public static PickSweepstakesTypeManager(string user)
+        //{
+
+        //    switch (user)
+        //    {
+        //        case "queue":
+        //            SweepstakesQueueManager sweepstakesQueueManager = new SweepstakesQueueManager();
+        //            return sweepstakesQueueManager;
+        //        case "stack":
+        //            SweepstakesStackManager sweepstakesStackManager = new SweepstakesStackManager();
+        //            return sweepstakesStackManager;
+        //        default:
+        //            return ChooseSweepstakesTypeManager(user);
+        //    }
+
+        //}
     }
 }
