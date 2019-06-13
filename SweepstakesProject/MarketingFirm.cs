@@ -9,11 +9,11 @@ namespace SweepstakesProject
     class MarketingFirm
     {
         //member variable (HAS A)
-
+        ISweepstakesManager sweepstakesManager;
         //constructor
-        public MarketingFirm()
+        public MarketingFirm(ISweepstakesManager manager)
         {
-
+            this.sweepstakesManager = manager;
         }
         //method (CAN DO)  ------------------------------------------------------------------------------------------------
         //(10 points) As a developer, I want to implement dependency injection in my MarketingFirm class
