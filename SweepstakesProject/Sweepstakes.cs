@@ -57,69 +57,33 @@ namespace SweepstakesProject
             Console.ReadLine();
         }
 
+        // ----------------------------------Extra credit  --------------------------------------------------------------
+        //(5 points) As a developer, I want to use the observer design pattern to notify all users of the 
+        //winning contestant, with the winner of the sweepstakes getting a different message specifically 
+        //congratulating them on being the winner.
+
+        public void NotifyEachContestants()
+        {
+            int winnerContestant;
+            winnerContestant = random.Next(contestantsDictionary.Count) + 1;            // assign operator; ex. y = x+1                                                                                            // contestantsDictionary.TryGetValue(winnerContestant, out winner);            // TryGetValue to pick winner
+            //foreach (KeyValuePair<int, Contestant> pair in contestantsDictionary)
+            //{
+                if (winner == contestantsDictionary[winnerContestant])
+                {
+                    Console.WriteLine("Congratulation, you're the winner!");
+                }
+                else
+                {
+                    Console.WriteLine("Sorry, you're not the winner!");
+                }
+            //}
+        }
+
 
 
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-    //public class DictionaryExamples
-    //{
-    //    public void DisplayAnimalCategorization()
-    //    {
-    //        Dictionary<string, string> animals = new Dictionary<string, string>();
-    //        animals.Add("cat", "feline");
-    //        animals.Add("dog", "canine");
-
-    //        foreach (KeyValuePair<string, string> pair in animals)
-    //        {
-    //            Console.WriteLine(pair.Key + " - " + pair.Value);
-    //        }
-    //    }
-    //    public void DisplayMonthSeason()
-    //    {
-    //        Dictionary<string, string> monthsInSeason = new Dictionary<string, string>();
-    //        monthsInSeason.Add("December", "winter");
-    //        monthsInSeason.Add("July", "summer");
-    //        monthsInSeason.Add("October", "fall");
-    //        monthsInSeason.Add("April", "spring");
-
-    //        Console.Write("Enter a month: ");
-    //        string key = (Console.ReadLine());
-
-    //        foreach (KeyValuePair<string, string> month in monthsInSeason)
-    //        {
-    //            if (month.Key == key)
-    //                Console.WriteLine("Month " + month.Key + " is of season " + month.Value);
-    //        }
-    //    }
-    //    public void DisplayEmployeeIdName()
-    //    {
-    //        Dictionary<int, string> employees = new Dictionary<int, string>();
-    //        employees.Add(1337, "Terrill");
-    //        employees.Add(1234, "Heinisch");
-    //        employees.Add(9541, "Carlson");
-
-    //        Console.Write("Enter an employee name: ");
-    //        string value = Console.ReadLine();
-    //        foreach (KeyValuePair<int, string> employee in employees)
-    //        {
-    //            if (employee.Value == value)
-    //                Console.WriteLine($"Employee ID: {employee.Key} Employee Name: {employee.Value}");
-    //        }
-    //    }
-    //}
 
 
 

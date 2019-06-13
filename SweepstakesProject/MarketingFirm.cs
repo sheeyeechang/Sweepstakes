@@ -10,7 +10,7 @@ namespace SweepstakesProject
     {
         //member variable (HAS A)
         ISweepstakesManager sweepstakesManager;
-        //constructor
+        //constructor dependency injection
         public MarketingFirm(ISweepstakesManager manager)
         {
             this.sweepstakesManager = manager;

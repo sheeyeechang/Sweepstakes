@@ -28,9 +28,9 @@ namespace SweepstakesProject
             contestant2.firstName = "Mai";
             contestant2.lastName = "Chang";
             sweepstakes.RegisterContestant(contestant2);
+
             string winner = sweepstakes.PickWinner();
             Console.WriteLine("1st " + winner);
-
             winner = sweepstakes.PickWinner();
             Console.WriteLine("2nd " + winner);
             winner = sweepstakes.PickWinner();
@@ -39,6 +39,9 @@ namespace SweepstakesProject
             sweepstakes.PrintContestantInfo(contestant);
             sweepstakes.PrintContestantInfo(contestant1);
             sweepstakes.PrintContestantInfo(contestant2);
+
+
+            sweepstakes.NotifyEachContestants();
 
             Console.ReadLine();
 

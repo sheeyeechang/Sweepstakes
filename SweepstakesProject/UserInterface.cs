@@ -50,14 +50,8 @@ namespace SweepstakesProject
         {
             Console.WriteLine("Do you want your sweepstakes manage by: stack or queue?");
             string userChoice = Console.ReadLine().ToString();
-            if (userChoice != "stack" || userChoice != "queue")
-            {
-                Console.WriteLine("Please enter: stack or queue");
-                Console.ReadLine().ToString();
-            }
             return userChoice;
         }
-
 
     }
 }
