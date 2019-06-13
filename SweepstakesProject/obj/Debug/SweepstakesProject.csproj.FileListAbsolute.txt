@@ -5,3 +5,9 @@ C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Deb
 C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.exe
 C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.pdb
 C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.csprojAssemblyReference.cache
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\bin\Debug\MailKit.dll
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\bin\Debug\MimeKit.dll
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\bin\Debug\MailKit.xml
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\bin\Debug\MimeKit.xml
+C:\Users\palee\Desktop\SweepstakesProject\Sweepstakes\SweepstakesProject\obj\Debug\SweepstakesProject.csproj.CopyComplete

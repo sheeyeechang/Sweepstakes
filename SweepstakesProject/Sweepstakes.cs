@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MailKit.Net.Smtp;
+using MimeKit;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -79,10 +81,40 @@ namespace SweepstakesProject
             //}
         }
 
+        //(5 points) As a developer, I want to send an actual email to a sweepstakes winner using an 
+        //MailKit API https://github.com/jstedfast/MailKit
 
+        public void NotifyWinnerEmail(Contestant contestant)
+        {
+            int winnerContestant;
+            winnerContestant = random.Next(contestantsDictionary.Count) + 1;            // assign operator; ex. y = x+1
+            winner = contestantsDictionary[winnerContestant];
+
+            MimeMessage message = new MimeMessage();
+            message.From.Add(new MailboxAddress("Shee Yee Chang", "sheeyee@gmail.com"));
+            message.To.Add(new MailboxAddress(contestant.emailAddress));
+            message.Subject = "You're The Sweepstakes Winner 2019";
+            message.Body = new TextPart("plain")
+            {
+                Text = @"Congratulation, you're the winner!"
+            };
+            using (var client = new SmtpClient())
+            {
+                client.Connect("smtp.gmail.com", 587);
+                // Note: since we don't have an OAuth2 token, disable
+                // the XOAUTH2 authentication mechanism.
+                client.AuthenticationMechanisms.Remove("XOAUTH2");
+                // Note: only needed if the SMTP server requires authentication
+                client.Authenticate("sheeyeechang@gmail.com", "devCodeCamp19");
+                client.Send(message);
+                client.Disconnect(true);
+            }
+           Console.WriteLine("MessageSent");
+        }
 
     }
 }
+
 
 
 

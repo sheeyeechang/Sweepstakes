@@ -42,6 +42,7 @@ namespace SweepstakesProject
 
 
             sweepstakes.NotifyEachContestants();
+            sweepstakes.NotifyWinnerEmail(contestant);
 
             Console.ReadLine();
 
