@@ -91,7 +91,7 @@ namespace SweepstakesProject
             winner = contestantsDictionary[winnerContestant];
 
             MimeMessage message = new MimeMessage();
-            message.From.Add(new MailboxAddress("Shee Yee Chang", "sheeyee@gmail.com"));
+            message.From.Add(new MailboxAddress("Shee Yee Chang", "sheeyeechang@gmail.com"));
             message.To.Add(new MailboxAddress(contestant.emailAddress));
             message.Subject = "You're The Sweepstakes Winner 2019";
             message.Body = new TextPart("plain")
