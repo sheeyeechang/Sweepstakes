@@ -29,38 +29,35 @@ namespace SweepstakesProject
             string lastName = Console.ReadLine().ToString();
             return lastName;
         }
-        public static string Email()
+        public static string EmailAddress()
         {
             Console.WriteLine("Please enter your email?");
-            string email = Console.ReadLine().ToString();
-            return email;
+            string emailAddress = Console.ReadLine().ToString();
+            return emailAddress;
         }
 
         public static void DisplayConstestantInfo(Contestant contestant)
         {
             Console.WriteLine($"First Name: {contestant.firstName}");
-            Console.WriteLine($"Last Name: {contestant.firstName}");
+            Console.WriteLine($"Last Name: {contestant.lastName}");
             Console.WriteLine($"Email: {contestant.emailAddress}");
             Console.WriteLine($"Registration Number: {contestant.registrationNumber}");
             Console.ReadLine();
         }
 
         //ask to pick a stack or queue
-        //public static PickSweepstakesTypeManager(string user)
-        //{
+        public static string PickSweepstakesTypeManager()
+        {
+            Console.WriteLine("Do you want your sweepstakes manage by: stack or queue?");
+            string userChoice = Console.ReadLine().ToString();
+            if (userChoice != "stack" || userChoice != "queue")
+            {
+                Console.WriteLine("Please enter: stack or queue");
+                Console.ReadLine().ToString();
+            }
+            return userChoice;
+        }
 
-        //    switch (user)
-        //    {
-        //        case "queue":
-        //            SweepstakesQueueManager sweepstakesQueueManager = new SweepstakesQueueManager();
-        //            return sweepstakesQueueManager;
-        //        case "stack":
-        //            SweepstakesStackManager sweepstakesStackManager = new SweepstakesStackManager();
-        //            return sweepstakesStackManager;
-        //        default:
-        //            return ChooseSweepstakesTypeManager(user);
-        //    }
 
-        //}
     }
 }

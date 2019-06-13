@@ -42,6 +42,21 @@ namespace SweepstakesProject
 
             Console.ReadLine();
 
+            Contestant contestant3 = new Contestant();
+            contestant3.firstName = UserInterface.FirstName();
+            Console.ReadLine();
+            contestant3.lastName = UserInterface.LastName();
+            Console.ReadLine();
+            contestant3.emailAddress = UserInterface.EmailAddress();
+            Console.ReadLine();
+
+            UserInterface.DisplayConstestantInfo(contestant3);
+
+            string user = UserInterface.PickSweepstakesTypeManager(); //variable to store input of manager type
+            Console.ReadLine();
+
+
+
         }
     }
 }
