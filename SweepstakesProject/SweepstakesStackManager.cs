@@ -9,12 +9,12 @@ namespace SweepstakesProject
     class SweepstakesStackManager : ISweepstakesManager
     {
         //member variable (HAS A)
-        Stack<Sweepstakes> sweepstakesStack;
+        Stack<Sweepstakes> stack;
 
         //constructor
         public SweepstakesStackManager()
         {
-            sweepstakesStack = new Stack<Sweepstakes>();
+            stack = new Stack<Sweepstakes>();
         }
         //method (CAN DO)  ------------------------------------------------------------------------------------------------
         //(10 points) As a developer, I want to create a SweepstakesStackManager class that uses the 
@@ -25,13 +25,13 @@ namespace SweepstakesProject
 
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-            sweepstakesStack.Push(sweepstakes);
+            stack.Push(sweepstakes);
         }
 
         public Sweepstakes GetSweepstakes()
         {
             Sweepstakes sweepstakes;
-            sweepstakes = sweepstakesStack.Pop();
+            sweepstakes = stack.Pop();
             return sweepstakes;
         }
 
