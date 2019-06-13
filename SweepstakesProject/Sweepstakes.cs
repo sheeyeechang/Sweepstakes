@@ -38,7 +38,7 @@ namespace SweepstakesProject
             int winnerContestant;
             winnerContestant = random.Next(contestantsDictionary.Count) + 1;
             contestantsDictionary.TryGetValue(winnerContestant, out winner);
-            string name = winner.firstName + " " + winner.lastName + " " + winner.registrationNumber;
+            string name = "First Name: " + winner.firstName + " Last Name: " winner.lastName + " Registration Number: " + winner.registrationNumber;
             return name;
 
             //    TValue value;
