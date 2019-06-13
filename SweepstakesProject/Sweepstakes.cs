@@ -35,7 +35,6 @@ namespace SweepstakesProject
         // random select winner from dictionary
         public string PickWinner()
         {
-            Contestant winner;
             int winnerContestant;
             winnerContestant = random.Next(contestantsDictionary.Count) + 1;
             contestantsDictionary.TryGetValue(winnerContestant, out winner);
